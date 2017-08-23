@@ -33,6 +33,7 @@ analytics.methods = [
   'track',
   'ready',
   'alias',
+  'debug',
   'page',
   'once',
   'off',
@@ -47,7 +48,7 @@ analytics.factory = function(method){
   return function(){
     var args = Array.prototype.slice.call(arguments);
     args.unshift(method);
-    analytics.push(args);
+    window.analytics.push(args);
     return analytics;
   };
 };
