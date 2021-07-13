@@ -9,7 +9,7 @@ Npm.depends({
   "analytics-node": "2.1.1",
 });
 
-Package.on_use(function (api) {
+Package.onUse(function (api) {
   api.versionsFrom('METEOR@0.9.4');
   api.use("underscore");
   api.addFiles('snippet.js', 'client');
