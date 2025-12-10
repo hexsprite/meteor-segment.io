@@ -10,7 +10,7 @@ Npm.depends({
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('METEOR@0.9.4');
+  api.versionsFrom(['2.3', '3.0']);
   api.use("underscore");
   api.addFiles('snippet.js', 'client');
   api.addFiles('server.js', 'server');
